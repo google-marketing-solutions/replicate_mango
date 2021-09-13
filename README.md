@@ -12,16 +12,19 @@ terms of:
 - Access to BigQuery’s graphical user interface
 - Access to Merchant Center product feeds
 
-## How-to setup
+## How-to setup (step-by-step guide and how-to videos available [here](https://sites.google.com/view/mango-merchantcenteranalytics))
 
 1. Copy, adjust and execute the SQL scripts provided in this repository.
-2. Create a copy of the following [dashboard template](add-link-once-avaiable).
-3. Replace the dashboard's data sources with your newly created tables.
+2. Create a copy of the following [dashboard template](https://datastudio.google.com/reporting/59d961a5-b64a-4018-adb3-147271481a52).
+3. Adjust the dashboard’s existing data sources with your newly created tables.
+
+Done.
 
 ## Authors
 
-- [Tim Hausweiler](mailto:timhausweiler@google.com)
-- Marius Busen & Till Dietrich
+- Tim Hausweiler, Marius Busen & Till Dietrich
+
+For questions, please reach out to mango-analytics-dev@google.com.
 
 ## Licensing
 
