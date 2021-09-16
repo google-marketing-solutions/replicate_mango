@@ -15,7 +15,7 @@ terms of:
 ## How-to setup (step-by-step guide and how-to videos available [here](https://sites.google.com/view/mango-merchantcenteranalytics))
 
 1. Copy, adjust and execute the SQL scripts provided in this repository.
-2. Create a copy of the following [dashboard template](https://datastudio.google.com/reporting/59d961a5-b64a-4018-adb3-147271481a52).
+2. Create a copy of the following [dashboard template](https://datastudio.google.com/reporting/59d961a5-b64a-4018-adb3-147271481a52/preview).
 3. Adjust the dashboard’s existing data sources with your newly created tables.
 
 Done.
