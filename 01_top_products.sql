@@ -136,7 +136,24 @@ WITH
       `{project_id}.{dataset}.BestSellers_TopProducts_Inventory_{gmc_id}` AS I
       USING (product_id)
     GROUP BY 1, 2
-  )
+  ),
+  images AS (
+  SELECT
+    rank_id,
+    image_link
+  FROM (
+    SELECT
+      I.rank_id,
+      image_link,
+      row_number () OVER(PARTITION BY rank_id ORDER BY image_link) AS row_number
+    FROM
+      `{project_id}.{dataset}.Products_{gmc_id}` AS P
+    LEFT JOIN
+      `{project_id}.{dataset}.BestSellers_TopProducts_Inventory_{gmc_id}` AS I
+    USING
+      (product_id))
+  WHERE
+    row_number = 1)
 SELECT DISTINCT
   rank_timestamp,
   rank,
@@ -166,11 +183,16 @@ SELECT DISTINCT
   PB.price_benchmark_currency,
   P.price_value,
   P.price_currency,
-  P.variants
+  P.variants,
+  img.image_link
 FROM BestSellers AS BS
 LEFT JOIN InventoryPriceBenchmarks AS IPB
   ON BS.rank_id = IPB.rank_id
 LEFT JOIN PriceBenchmarks AS PB
   ON PB.rank_id = BS.rank_id
 LEFT JOIN Price AS P
-  ON P.rank_id = BS.rank_id;
+  ON P.rank_id = BS.rank_id
+LEFT JOIN
+  images AS img
+ON
+  img.rank_id = BS.rank_id;
