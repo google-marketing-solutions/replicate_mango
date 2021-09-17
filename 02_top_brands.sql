@@ -14,7 +14,7 @@
 
 /*
 
-[MANGO] Creating table no. 2: top_brands
+[Assortment Analytics] Creating table no. 2: top_brands
 
 HOW TO:
 
@@ -36,7 +36,7 @@ HOW TO:
 
 4. [OPTIONAL] Schedule query if you want the data to update regularly. You can do so by following these steps:
       a. Click "Schedule" > "Create new scheduled query"
-      b. Specify a name for your scheduled query (example: "MANGO top brands")
+      b. Specify a name for your scheduled query (example: "Assortment Analytics top brands")
       c. Specify schedule frequency (weekly recommended)
       d. Select "Overwrite table"
 */
