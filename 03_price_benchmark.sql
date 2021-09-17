@@ -14,7 +14,7 @@
 
 /*
 
-[MANGO] Creating table no. 3: price_benchmark
+[Assortment Analytics] Creating table no. 3: price_benchmark
 
 HOW TO:
 
@@ -36,7 +36,7 @@ HOW TO:
 
 4. [OPTIONAL] Schedule query if you want the data to update regularly. You can do so by following these steps:
       a. Click "Schedule" > "Create new scheduled query"
-      b. Specify a name for your scheduled query (example: "MANGO price benchmark")
+      b. Specify a name for your scheduled query (example: "Assortment Analytics price benchmark")
       c. Specify schedule frequency (weekly recommended)
       d. Select "Overwrite table"
 */
