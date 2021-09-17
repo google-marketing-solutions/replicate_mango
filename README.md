@@ -1,6 +1,6 @@
-# 🥭 Merchantcenter Analytics with Google [MANGO] - Optimize your product assortment with the help of Google’s Merchant Center
+# Assortment Analytics with Google - Optimize your product assortment with the help of Google’s Merchant Center
 
-MANGO is an open-source solution to help you optimize your product assortment in
+Assortment Analytics is an open-source solution to help you optimize your product assortment in
 terms of:
 
 1. Product and brand popularity
